@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <style>
+    .bg { fill: #121212; }
+    .bracket { fill: none; stroke: #10b981; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+    .initial { fill: #ffffff; font-family: 'Calibre', 'SFMono', sans-serif; font-weight: 700; font-size: 110px; }
+    .accent-dot { fill: #10b981; }
+    .tag { fill: #888888; font-family: 'SFMono', monospace; font-size: 14px; letter-spacing: 4px; }
+  </style>
+  <rect width="500" height="500" rx="90" class="bg"/>
+  <path d="M 120 160 L 80 250 L 120 340" class="bracket"/>
+  <path d="M 380 160 L 420 250 L 380 340" class="bracket"/>
+  <text x="250" y="275" text-anchor="middle" class="initial">IK</text>
+  <circle cx="282" cy="225" r="8" class="accent-dot"/>
+  <text x="250" y="385" text-anchor="middle" class="tag">&lt;FULLSTACK /&gt;</text>
+</svg>
