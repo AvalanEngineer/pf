@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 40px 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.socialBtn {
+    width: 22px;
+    height: 22px;
+    fill: var(--text-secondary);
+    cursor: pointer;
+    transition: fill var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.socialBtn:hover {
+    fill: var(--accent-primary);
+    transform: translateY(-3px);
+}
+
+.footerContent {
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+    color: var(--text-secondary);
+    font-family: var(--font-mono), serif;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}

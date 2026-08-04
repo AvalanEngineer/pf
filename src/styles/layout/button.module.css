@@ -1,0 +1,123 @@
+.baseBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 6px;
+    font-family: var(--font-mono), serif;
+}
+
+.rectangle { padding: 0.5rem 1.5rem; }
+.rounded { padding: 0.5rem 1.5rem; border-radius: 9999px; }
+.circle { padding: 0.5rem; border-radius: 50%; aspect-ratio: 1/1; min-width: 2.5rem; }
+.square { padding: 0.5rem; aspect-ratio: 1/1; }
+
+.elevated {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid var(--accent-primary);
+}
+
+.elevated:hover:not(:disabled) {
+    transform: translateY(-1px);
+    border: 1.5px solid var(--accent-primary);
+}
+
+.secondary {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1.5px solid var(--border-color);
+}
+
+.secondary:hover:not(:disabled) {
+    background-color: var(--bg-surface);
+    transform: translateY(-1px);
+    border-color: var(--accent-secondary);
+    color: var(--accent-secondary);
+}
+
+.outline {
+    border: 1.5px solid var(--accent-primary);
+    color: var(--accent-primary);
+    background: transparent;
+}
+
+.outline:hover:not(:disabled) {
+    background-color: rgba(144, 238, 144, 0.1);
+}
+
+.text {
+    border-color: transparent;
+    color: var(--text-secondary);
+    background: transparent;
+}
+
+.text:hover:not(:disabled) {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+}
+
+.ghost {
+    background: transparent;
+    color: var(--text-secondary);
+    border-color: transparent;
+}
+
+.ghost:hover:not(:disabled) {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+}
+
+.baseBtn:active:not(:disabled) { transform: scale(0.97); }
+
+.baseBtn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    filter: grayscale(0.5);
+}
+
+.fullWidth { width: 100%; }
+
+.spinnerOverlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 600ms linear;
+    background-color: currentColor;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-family), serif;
+}
+
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: fit-content;
+    padding: 60px 0;
+    margin: 0;
+}
+
+@media (max-width: 550px) {
+    .mainBody {
+        padding: 0 5px;
+    }
+    .sectionWrapper {
+        padding: 60px 0;
+    }
+}
