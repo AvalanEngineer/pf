@@ -19,7 +19,7 @@ export const portfolioData: PortfolioModel = {
         contact: 'Contact',
         resume: {
             name: 'Resume',
-            link: '../../pf/resume.pdf'
+            link: '../../resume.pdf'
         }
     },
     introduction: {

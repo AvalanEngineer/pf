@@ -56,7 +56,7 @@ const config: SiteConfig = {
       'Isaac Richu Karanja is a Software Engineer and Founder of Nexavalan Tech Solutions, based in Kenya, dedicated to building scalable Web & Mobile applications.',
   siteKeywords:
       'Isaac Richu Karanja, Isaac Richu, software engineer, fullstack developer, web developer, mobile developer, Nexavalan Tech Solutions, PointIt POS, Kenya, Flutter, Spring Boot, Next.js',
-  siteUrl: 'https://avalanengineer.github.io/',
+  siteUrl: 'https://ceo.nexavalan.com/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
